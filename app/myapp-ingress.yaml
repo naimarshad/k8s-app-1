@@ -4,7 +4,6 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-production
   name: myapp-ingress
-  namespace: myapp-namespace
 spec:
   ingressClassName: nginx
   rules:

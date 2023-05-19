@@ -4,7 +4,6 @@ metadata:
   labels:
     app: myapp
   name: myapp
-  namespace: myapp-namespace
 spec:
   ports:
   - port: 80
