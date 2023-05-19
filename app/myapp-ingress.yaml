@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: mayapp.fmownspace.com
+  - host: myapp.fmownspace.com
     http:
       paths:
       - backend:
@@ -20,5 +20,5 @@ spec:
         pathType: Prefix
   tls:
   - hosts:
-    - mayapp.fmownspace.com
+    - myapp.fmownspace.com
     secretName: myapp-tls
