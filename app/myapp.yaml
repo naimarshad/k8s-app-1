@@ -5,6 +5,7 @@ metadata:
   labels:
     app: myapp
   name: myapp
+  namespace: myapp-namespace
 spec:
   replicas: 1
   selector:
@@ -26,7 +27,7 @@ metadata:
   labels:
     app: myapp
   name: myapp
-  namespace: default
+  namespace: myapp-namespace
 spec:
   ports:
   - port: 80
@@ -42,7 +43,7 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-production
   name: myapp-ingress
-  namespace: default
+  namespace: myapp-namespace
 spec:
   ingressClassName: nginx
   rules:
